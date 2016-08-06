@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nombre = "codigoFacilito";
+		/*
+			Operadores:
+			+ - * / % Operaciones Aritmeticas
+			++ -- Aumentar o Restar uno al valor de la variable
+			= Asignacion
+			< > == != <= >= Comparaciones entre elementos o var
+			&& || ! logicos (and, or, not)
+		*/
+		
+		var edad = 1;
+		
+		//IF ELSE IF ELSE
+		if(edad > 18){
+			alert("Eres mayor de 18");
+		}else if(edad < 18){
+			alert("Eres menor de edad")
+		}else{
+			alert("Tienes 18 años de edad")
+		}
+
+		//alert("hola "+ nombre);
+		
+		var aux = false;
+		var resultante = aux?"Hola":"Adios";
+		alert(resultante);
+
+		//SWITCH
+		switch(edad){
+			case 0:
+				alert("edad = 0");
+				break;
+			case 1:
+				alert("edad = 1");
+				break;
+			default:
+				alert("edad no es 0 ni 1");
+				break;
+		}
+
+		//FUNCIONES
+		function factorial(num){
+			var fac = 1;
+			for(num;num>0;num--)
+				fac = fac * num;
+			return fac;
+		}
+
+		var resultado = factorial(3);
+		alert(resultado);
+		alert(factorial(3));
+
+		var factorial = function(num){
+			var fac1 = 1;
+			for(num;num>0;num--)
+				fac1 = fac1 * num;
+			alert(fac1);
+		}
+		factorial(5);
+
+		//CICLOS
+		var i=0
+
+		for(i;i>10;i++){
+			alert(i);
+		}
+
+		while(i<10){
+			alert(i);
+			i++;
+		}
+
+		do{
+			alert(i);
+			i++;
+		}
+		while(i<10);
+	</script>
+</body>
+</html>
